@@ -1,8 +1,8 @@
 <?php
-
 namespace App\Models\Traits\Attributes;
 
 use Illuminate\Support\Str;
+use File;
 
 trait ProdukAttributes {
 
@@ -29,7 +29,7 @@ trait ProdukAttributes {
         $foto = $this->foto;
         $path = public_path("$foto");
         if(file_exists($path)){
-           //$mati= unlink($path);
+           File::delete($path);
         }
         return true;
     }
