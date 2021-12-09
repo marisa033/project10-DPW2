@@ -32,17 +32,31 @@
 								<input type="text" class="form-control" name="stok">	
 							</div>		
 						</div>
-					</div>
+					</div> <br>
 					<div class="form-group">
 						<label for="" class="control-label">Detail</label>
-						<textarea name="detail" class="form-control"></textarea>
+						<textarea id="detail" name="detail" class="form-control"></textarea>
 					</div>	
-					<button class="btn btn-info float-right"><i class="fa fa-save"> Simpan</i></button>	
+					<button class="btn btn-info float-right" style="height: 50px;"><i class="fa fa-save"> Simpan</i></button>	
 					</form>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 </div>
+
 @endsection
+
+@push('style')
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+@endpush
+
+@push('script')
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+@endpush
+
+<script type="text/javascript">
+	$(document).ready(function() {
+  $('#detail').summernote();
+});
+</script>

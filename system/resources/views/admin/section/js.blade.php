@@ -178,3 +178,10 @@
       });
     });
   </script>
+
+  @stack('script')
+  <script type="text/javascript">
+    $(document).ready(function() {
+  $('#detail').summernote();
+});
+  </script>
