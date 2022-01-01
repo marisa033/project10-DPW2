@@ -34,7 +34,7 @@
 						</div>
 					</div> <br>
 					<div class="form-group">
-						<label for="" class="control-label">Detail</label>
+						<label for="" class="control-label">Detail</label> <br>
 						<textarea id="detail" name="detail" class="form-control"></textarea>
 					</div>	
 					<button class="btn btn-info float-right" style="height: 50px;"><i class="fa fa-save"> Simpan</i></button>	
@@ -45,6 +45,7 @@
 	</div>
 </div>
 
+<!-- end coding -->
 @endsection
 
 @push('style')
